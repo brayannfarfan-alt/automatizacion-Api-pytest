@@ -1,6 +1,6 @@
 import requests
 
-URL_BASE = "https://reqres.in/api/users"
+URL_BASE = "https://reqres.in/api"
 
 HEADERS = {
     "x-api-key": "free_user_3DlMlTJEai0AWD9gw6DvADtOxi6",
@@ -11,24 +11,34 @@ creds = {
     'password': 'cityslicka'
 }
 
-# def get_users():
-#     response = requests.get(URL_BASE,headers=HEADERS)
-    
-#     if response.status_code == 200:
-#         print(response.json())
-#     else:
-#         print("Error")
+def get_users():
+    return requests.get(
+        f"{URL_BASE}/users",headers=HEADERS
+    )
+
+def create_user(name, job):
+    data = {
+        "name":name,
+        "job":job
+    }
+
+    return requests.post(
+        f"{URL_BASE}/users",headers=HEADERS, json=data
+    )
 
 
-# get_users()
+def login_user(email, password):
+    data = {
+        "email":email,
+        "password":password
+    }
 
+    return requests.post(
+        f"{URL_BASE}/login", json=data, headers=HEADERS
+    )
 
-# def login_post():
-#     result = requests.post(URL_BASE,headers=HEADERS,json=creds )
-#     success = result.json()
-#     print(success["id"])
-
-
-# login_post()
-
-
+def update_users(name, job):
+    data = {
+        "name":name,
+        "job":job
+    }
