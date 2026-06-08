@@ -24,7 +24,6 @@ def get_one_user(user_id):
     )
 
 
-
 def create_user(name, job):
     data = {
         "name":name,

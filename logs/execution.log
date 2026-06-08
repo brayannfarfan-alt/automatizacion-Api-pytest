@@ -1,0 +1,9 @@
+2026-06-08 19:54:43,766 INFO test.test_all – LLAMANDO A LA API.....
+2026-06-08 19:54:44,824 INFO test.test_all – obtuve la respuesta
+2026-06-08 19:54:45,164 ERROR test.test_all – SE Mostro UN ERROR AL COMAPRA CON EL STATUS CODE
+2026-06-08 19:56:21,660 INFO test.test_all – LLAMANDO A LA API.....
+2026-06-08 19:56:22,683 INFO test.test_all – obtuve la respuesta
+2026-06-08 19:56:22,945 ERROR test.test_all – SE Mostro UN ERROR AL COMAPRA CON EL STATUS CODE
+2026-06-08 20:09:40,005 INFO test.test_all – LLAMANDO A LA API.....
+2026-06-08 20:09:40,935 INFO test.test_all – obtuve la respuesta
+2026-06-08 20:09:41,282 ERROR test.test_all – SE Mostro UN ERROR AL COMAPRA CON EL STATUS CODE

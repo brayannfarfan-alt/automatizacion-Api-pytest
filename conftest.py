@@ -9,6 +9,6 @@ def user_data():
     }
 
 
-
-
+def pytest_html_report_title( report ):
+    report.title  = "API - REQURES PYTEST WITH REQUESTS"
 
