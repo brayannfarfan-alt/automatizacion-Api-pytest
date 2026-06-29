@@ -18,7 +18,7 @@ def test_get_user():
     logger.info("LLAMANDO A LA API.....")
     response = get_users()
     logger.info("obtuve la respuesta")
-    check.equal(response.status_code,201,"EL STATUS NO ES 200") 
+    check.equal(response.status_code,200,"EL STATUS NO ES 200") 
     logger.error("SE Mostro UN ERROR AL COMAPRA CON EL STATUS CODE")
     # data = response.json()
     # print(data)
